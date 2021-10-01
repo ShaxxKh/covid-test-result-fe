@@ -1,0 +1,17 @@
+{
+    "welcome": "Hello",
+    "intro": "Your Covid 19-Antibody test is complete!",
+    "id": "ID",
+    "date": "Date",
+    "download": "Download PDF",
+    "personalInfo": "Personal Information",
+    "name": "Name",
+    "birthday": "Date of Birth",
+    "location": "Location",
+    "appointmentId": "Appointment-ID",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "about": "About",
+    "language": "english",
+    "powered": "powered by"
+}

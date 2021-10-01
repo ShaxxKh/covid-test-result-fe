@@ -1,0 +1,24 @@
+.personal-info-block{
+    width: 51%;
+    height: 100%;
+    padding: 2rem 0 0 3.6rem;
+    box-shadow: 6px 6px 6px #00000029;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.peronal-info-heading{
+    font-size: 4rem;
+    font-weight: normal;
+    margin-bottom: 2%;
+    line-height: 150%;
+}
+
+.personal-info-text{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 2%;
+    line-height: 150%;
+}

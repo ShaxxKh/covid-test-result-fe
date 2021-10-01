@@ -1,0 +1,35 @@
+.status-block{
+    display: flex;
+    width: 100%;
+    height: 51%;
+    align-items: center;
+    padding-left: 4.2rem;
+    background-color: var(--color-positive);
+    border-radius: 8px;
+    box-shadow: 6px 6px 6px #00000029;
+    margin-bottom: 1.85vh;
+}
+
+.status-img{
+    width:9rem;
+    height: 9rem;
+    margin-right: 2rem;
+}
+
+.status-data{
+    display: flex;
+    flex-direction: column;
+}
+
+.status{
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.status-info{
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--color-white);
+    line-height: 150%;
+}

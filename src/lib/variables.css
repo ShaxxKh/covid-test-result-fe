@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "SourceSansPro-Black";
+    src: url("./../assets/fonts/SourceSansPro-Black.ttf");
+}
+
+:root {
+    --color-main: #8b133b;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-positive: rgba(0, 159, 0, 1);
+    --color-grey-border: rgba(229, 229, 229, 1);
+  
+    /* FONTS */
+    --font-main: "Source Sans Pro", sans-serif;  
+}
+  
