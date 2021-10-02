@@ -3,11 +3,12 @@ import MyText from "../MyText/MyText";
 
 
 const Footer = () => {
+
     return <footer className="footer">
         <div className="terms">
-            <a href="#" className="terms-link">{<MyText tid="terms" />}</a>
-            <a href="#" className="terms-link">{<MyText tid="privacy" />}</a>
-            <a href="#" className="terms-link">{<MyText tid="about" />}</a>
+            <a href={window.location.pathname} className="terms-link">{<MyText tid="terms" />}</a>
+            <a href={window.location.pathname} className="terms-link">{<MyText tid="privacy" />}</a>
+            <a href={window.location.pathname} className="terms-link">{<MyText tid="about" />}</a>
         </div>
         <div className="languages">
             <select className="select-languages" name="languages" id="languages">
