@@ -10,7 +10,7 @@ export default function MainContext({ children }) {
   React.useEffect(() => {
     axios({
       method: "GET",
-      url: `http://localhost:5000/api/getTestResult${window.location.pathname}`
+      url: `https://covid-results-be.herokuapp.com/api/getTestResult${window.location.pathname}`
     }).then((res) => {
       console.log(res);
       setTestResult(res.data.rows[0]);
