@@ -1,7 +1,7 @@
 import "./App.css";
 import MainContext from "./context";
 import MainPage from "./components/MainPage/MainPage";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import { LanguageProvider } from "./languageContext";
 
 function App(props) {
@@ -9,7 +9,8 @@ function App(props) {
     <LanguageProvider>
       <MainContext>
         <BrowserRouter>
-          <MainPage {...props}>asd</MainPage>
+          <Route path="/" component={MainPage} {...props} />
+          {/* <MainPage {...props}>asd</MainPage> */}
         </BrowserRouter>
       </MainContext>
     </LanguageProvider>
