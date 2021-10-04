@@ -9,7 +9,7 @@ function App(props) {
     <LanguageProvider>
       <MainContext>
         <BrowserRouter>
-          <Route path="/" component={MainPage} {...props} />
+          <Route component={MainPage} {...props} />
           {/* <MainPage {...props}>asd</MainPage> */}
         </BrowserRouter>
       </MainContext>
