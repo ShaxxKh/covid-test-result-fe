@@ -9,7 +9,7 @@ const PersonalInfo = () => {
     return <div className="personal-info-block">
         <h3 className="peronal-info-heading">{<MyText tid="personalInfo" />}</h3>
         <span className="personal-info-text">{<MyText tid="name" />}: {firstname}, {lastname}</span>
-        <span className="personal-info-text">{<MyText tid="birthday" />}: {birthdate}</span>
+        <span className="personal-info-text">{<MyText tid="birthday" />}: {new Date(birthdate).toLocaleDateString()}</span>
         <span className="personal-info-text">{<MyText tid="location" />}: {locationname}</span>
         <span className="personal-info-text">{<MyText tid="appointmentId" />}: {appointmentid}</span>
     </div>;
