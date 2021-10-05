@@ -10,13 +10,13 @@ export default function MainContext({ children }) {
   const [selectedOption, setSelectedOption] = React.useState(null);
 
   React.useEffect(() => {
-    // axios({
-    // method: "GET",
-    // url: `https://covid-results-be.herokuapp.com/api/getTestResult${window.location.pathname}`,
-    // }).then((res) => {
-    // console.log(res);
-    // setTestResult(res.data.rows[0]);
-    // });
+    axios({
+      method: "GET",
+      url: `https://covid-results-be.herokuapp.com/api/getTestResult${window.location.pathname}`,
+    }).then((res) => {
+      console.log(res);
+      setTestResult(res.data.rows[0]);
+    });
   }, []);
 
   return (

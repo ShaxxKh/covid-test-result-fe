@@ -10,9 +10,9 @@ const StatusBlock = () => {
     return <div className="status-block">
         <img src={status} alt="status" className="status-img" />
         <div className="status-data">
-            <h3 className="status">{testResult.testResult}</h3>
+            <h3 className="status">{testResult.testresult}</h3>
             <span className="status-info"><MyText tid="id" />: {testid}</span>
-            <span className="status-info"><MyText tid="date" />: {testdatetime}</span>
+            <span className="status-info"><MyText tid="date" />: {new Date(testdatetime).toLocaleDateString()}</span>
         </div>
     </div>;
 };
