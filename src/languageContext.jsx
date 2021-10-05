@@ -8,14 +8,18 @@ export const LanguageContext = createContext({
 
 export function LanguageProvider({ children }) {
     const [userLanguage, setUserLanguage] = useState("en");
+    const [fullUserLanguage, setFullUserLanguage] = useState("english");
 
     const provider = {
         userLanguage,
+        fullUserLanguage,
         dictionary: dictionary[userLanguage],
         userLanguageChange: selected => {
-            const newLanguage = languageOptions[selected] ? selected : 'en';
+            const newLanguage = languageOptions[selected].short ? /* selected */'en' : 'en';
+            const newFullLanguage = languageOptions[selected].full ? languageOptions[selected].full : 'english';
             setUserLanguage(newLanguage);
-        }
+            setFullUserLanguage(newFullLanguage);
+        },
     };
 
     return (

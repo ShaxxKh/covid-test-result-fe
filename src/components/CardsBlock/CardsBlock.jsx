@@ -7,8 +7,8 @@ const CardsBlock = () => {
         <div className="status-container">
             <StatusBlock />
             <DownloadBtn />
+            <PersonalInfo />
         </div>
-        <PersonalInfo />
     </div>;
 };
 

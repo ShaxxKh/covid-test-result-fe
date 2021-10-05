@@ -10,7 +10,6 @@ function App(props) {
       <MainContext>
         <BrowserRouter>
           <Route component={MainPage} {...props} />
-          {/* <MainPage {...props}>asd</MainPage> */}
         </BrowserRouter>
       </MainContext>
     </LanguageProvider>

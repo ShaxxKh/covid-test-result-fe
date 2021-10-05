@@ -5,7 +5,7 @@ import mainImg from "./../../assets/images/tree.jpeg";
 const MainSection = () => {
     return <section className="main-section">
         <InfoBlock />
-        <img src={mainImg} alt="main" />
+        <img className="main-img" src={mainImg} alt="main" />
     </section>;
 };
 
