@@ -12,7 +12,7 @@ export default function MainContext({ children }) {
   React.useEffect(() => {
     axios({
       method: "GET",
-      url: `https://covid-results-be.herokuapp.com/api/getTestResult${window.location.pathname}`,
+      url: `${process.env.REACT_APP_URL_GET_DATA}${window.location.pathname}`,
     }).then((res) => {
       console.log(res);
       setTestResult(res.data.rows[0]);
