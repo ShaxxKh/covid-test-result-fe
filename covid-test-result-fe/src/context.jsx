@@ -12,7 +12,7 @@ export default function MainContext({ children }) {
   React.useEffect(() => {
     axios({
       method: "GET",
-      url: `${process.env.REACT_APP_URL_GET_DATA}${window.location.pathname}`,
+      url: `http://localhost:5000/api/getTestResult${window.location.pathname}`,
     }).then((res) => {
       console.log(res);
       setTestResult(res.data.rows[0]);
