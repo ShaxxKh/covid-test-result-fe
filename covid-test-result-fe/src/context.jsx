@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
+import constants from "./constants";
 
 export const Context = React.createContext(null);
 
@@ -12,7 +13,7 @@ export default function MainContext({ children }) {
   React.useEffect(() => {
     axios({
       method: "GET",
-      url: `http://localhost:5000/api/getTestResult${window.location.pathname}`,
+      url: `${constants.BACKEND_URL}/getTestResult${window.location.pathname}`,
     }).then((res) => {
       console.log(res);
       setTestResult(res.data.rows[0]);
