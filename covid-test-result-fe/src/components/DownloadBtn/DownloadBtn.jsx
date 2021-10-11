@@ -13,23 +13,16 @@ const DownloadBtn = () => {
         axios({
             method: "POST",
             url: `${constants.BACKEND_URL}/generatePdf`,
+            encoding: null,
+            responseType: "blob",
             data: testResult
-        }, { responseType: Blob }).then((res) => {
-            console.log(res);
-
-            // let headerLine = res.headers["content-disposition"];
-            // let startFileNameIndex = headerLine.indexOf('"') + 1;
-            // let endFileNameIndex = headerLine.lastIndexOf('"');
-            // let filename = headerLine.substring(
-            //     startFileNameIndex,
-            //     endFileNameIndex
-            // );
+        }).then((res) => {
             const url = window.URL.createObjectURL(
                 new Blob([res.data], {
                     type: "application/pdf",
                 })
             );
-            console.log(url);
+
             const link = document.createElement("a");
 
             link.href = url;
@@ -40,10 +33,10 @@ const DownloadBtn = () => {
         });
     };
 
-    return <button onClick={downloadPdf} className="download-btn">
+    return <a download onClick={downloadPdf} className="download-btn">
         <img src={downloadImg} alt="download" className="download-img" />
         {<MyText tid="download" />}
-    </button>;
+    </a>;
 };
 
 export default DownloadBtn;
