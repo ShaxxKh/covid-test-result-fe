@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { Context } from "../../context";
 
 const DownloadBtn = () => {
-
+    console.log(window.location);
     const { testResult } = useContext(Context);
 
     const downloadPdf = () => {
@@ -15,7 +15,7 @@ const DownloadBtn = () => {
             url: `${constants.BACKEND_URL}/generatePdf`,
             encoding: null,
             responseType: "blob",
-            data: testResult
+            data: { ...testResult, reqUrl: window.location.href }
         }).then((res) => {
             const url = window.URL.createObjectURL(
                 new Blob([res.data], {
@@ -33,10 +33,10 @@ const DownloadBtn = () => {
         });
     };
 
-    return <a download onClick={downloadPdf} className="download-btn">
+    return <button onClick={downloadPdf} className="download-btn">
         <img src={downloadImg} alt="download" className="download-img" />
         {<MyText tid="download" />}
-    </a>;
+    </button>;
 };
 
 export default DownloadBtn;
