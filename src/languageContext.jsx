@@ -15,8 +15,9 @@ export function LanguageProvider({ children }) {
         fullUserLanguage,
         dictionary: dictionary[userLanguage],
         userLanguageChange: selected => {
-            const newLanguage = languageOptions[selected].short ? /* selected */'en' : 'en';
+            const newLanguage = languageOptions[selected].short ? selected : 'en';
             const newFullLanguage = languageOptions[selected].full ? languageOptions[selected].full : 'english';
+            console.log(newLanguage);
             setUserLanguage(newLanguage);
             setFullUserLanguage(newFullLanguage);
         },
