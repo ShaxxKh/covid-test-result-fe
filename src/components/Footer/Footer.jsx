@@ -17,12 +17,6 @@ const Footer = () => {
 
         <div className="languages">
             <LanguageSelect />
-
-            {/* <select className="select-languages" name="languages" id="languages">
-                <option value="en">english</option>
-                <option value="ge">german</option>
-                <option value="ru">russian</option>
-            </select> */}
             <Logo className="logo logo-smaller" />
         </div>
     </footer >;

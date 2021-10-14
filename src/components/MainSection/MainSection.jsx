@@ -1,6 +1,6 @@
 import React from "react";
 import InfoBlock from "../InfoBlock/InfoBlock";
-import mainImg from "./../../assets/images/tree.jpeg";
+import mainImg from "./../../assets/images/bg.png";
 
 const MainSection = () => {
     return <section className="main-section">

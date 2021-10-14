@@ -53,13 +53,15 @@
         border: none;
     }
 
-    .logo {
-        width: 16.5rem;
-        height: 4rem;
+    .logo-smaller {
+        width: 17rem;
+        height: 2.2rem;
     }
 
     .logo-header {
-        margin-bottom: 7.5vh
+        margin-bottom: 7.5vh;
+        width: 16.5rem;
+        height: 4rem;
     }
 
     .welcome {
