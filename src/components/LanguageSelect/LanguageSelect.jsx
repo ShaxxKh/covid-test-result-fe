@@ -8,7 +8,7 @@ import { dictionary } from "../../dictionary/dictionary";
 const LanguageSelect = () => {
   const { isOpenSelect, setIsOpenSelect } = useContext(Context);
   const { userLanguageChange, fullUserLanguage } = useContext(LanguageContext);
-  const [title, setTitle] = React.useState(dictionary["title"]);
+  const [title, setTitle] = React.useState(dictionary["en"]["title"]);
 
   const togglingSelect = () => setIsOpenSelect(!isOpenSelect);
   const onOptionClicked = (value) => {
