@@ -25,7 +25,10 @@ export default function MainContext({ children }) {
       value={{
         testResult,
         setTestResult,
-        isOpenSelect, setIsOpenSelect, selectedOption, setSelectedOption
+        isOpenSelect,
+        setIsOpenSelect,
+        selectedOption,
+        setSelectedOption,
       }}
     >
       {children}
