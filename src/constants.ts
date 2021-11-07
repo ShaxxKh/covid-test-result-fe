@@ -1,5 +1,5 @@
 const constants = {
-    BACKEND_URL: "https://covid-results-be.herokuapp.com/api/"
+    BACKEND_URL: "http://localhost:5000/"
 };
 
 export default constants;
